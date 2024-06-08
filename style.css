@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(244 67 54 / 72%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lilita One", cursive;
+  /*     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+ */
+
+  /*     font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ */
+}
+
+.wrapper {
+  width: 400px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 33px 10px 12px;
+  background-color: #fff;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.task-input {
+  height: 50px;
+  padding: 9px;
+}
+
+.task-input input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #999;
+  padding: 0 7px;
+  box-sizing: border-box;
+}
+.active {
+  color: rgb(244 67 54 / 72%);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #898282;
+}
+
+.controls button {
+  background-color: rgb(244 67 54 / 72%);
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.controls .filters span {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+.task-box {
+  margin: 20px 25px;
+}
+
+.task-box label {
+  display: flex;
+}
+
+.task-box .task p {
+  margin-left: 22px;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+}
+.task-box .task {
+  border-bottom: 1px solid #999;
+  padding-bottom: 23px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.task-box .task:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.settings {
+  top: -7px;
+  position: absolute;
+  font-size: 25px;
+  left: 20rem;
+  cursor: pointer;
+}
