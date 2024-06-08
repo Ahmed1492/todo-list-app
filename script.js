@@ -13,7 +13,7 @@ function showTodo() {
                         <p>${todo.name}</p>
                         </label>
                         <div class="settings">
-                            ...
+                            <button>Delete</button>
                         </div>
                 </li>`;
 
@@ -49,11 +49,33 @@ clearButton.addEventListener('click', function () {
 
 
 
+let moreOptions = document.getElementsByClassName('settings');
+
+console.log(moreOptions);
+
+for (let i = 0; i < moreOptions.length; i++) {
+  moreOptions[i].addEventListener('click', function (e) {
+    todos.splice(i, 1);
+    localStorage.setItem('todo-list', JSON.stringify(todos));
+    showTodo();
+    console.log(`inde ${i} and new arr =`, todos);
+    location.reload();
 
 
+  });
+}
 
 
-
+// for (let i = 0; i < moreOptions.length; i++) {
+//   moreOptions[i].addEventListener('click', function (index) {
+//     return function (e) {
+//       todos.splice(index, 1);
+//       localStorage.setItem('todo-list', JSON.stringify(todos));
+//       showTodo();
+//       console.log(`index ${index} and new arr =`, todos);
+//     };
+//   }(i));
+// }
 
 
 //

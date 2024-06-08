@@ -1,7 +1,10 @@
 body {
-  background-color: rgb(244 67 54 / 72%);
+  background-color: var(--root-color);
 }
-
+:root {
+  --root-color: #009688;
+  --root-color: #3f51b5;
+}
 * {
   padding: 0;
   margin: 0;
@@ -38,7 +41,7 @@ body {
   box-sizing: border-box;
 }
 .active {
-  color: rgb(244 67 54 / 72%);
+  color: var(--root-color);
 }
 .controls {
   display: flex;
@@ -50,7 +53,7 @@ body {
 }
 
 .controls button {
-  background-color: rgb(244 67 54 / 72%);
+  background-color: var(--root-color);
   color: #fff;
   padding: 9px 18px;
   border-radius: 8px;
@@ -85,8 +88,7 @@ ul {
 }
 .task-box .task {
   border-bottom: 1px solid #999;
-  padding-bottom: 23px;
-  margin-bottom: 32px;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -96,10 +98,17 @@ ul {
   padding-bottom: 0;
 }
 
-.settings {
-  top: -7px;
-  position: absolute;
-  font-size: 25px;
-  left: 20rem;
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings button {
+  background-color: var(--root-color);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
   cursor: pointer;
 }
